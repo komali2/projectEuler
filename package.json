@@ -1,0 +1,23 @@
+{
+  "name": "projecteuler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel projects -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komali2/projectEuler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komali2/projectEuler/issues"
+  },
+  "homepage": "https://github.com/komali2/projectEuler#readme",
+  "devDependencies": {
+    "babel-cli": "^6.8.0"
+  }
+}
