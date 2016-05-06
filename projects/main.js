@@ -1,7 +1,5 @@
-'use strict';
-
-import aFunc from './test.js';
+import summer from './threeandfive.js';
 
 $( window ).load(function() {
-  $('#main').html(aFunc());
+  $('#main').html(summer(1000));
 });
