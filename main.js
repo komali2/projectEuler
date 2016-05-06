@@ -1,5 +1,7 @@
+'use strict';
 
+import aFunc from './projects/test.js';
 
 $( window ).load(function() {
-  $('#main').html('hello');
+  $('#main').html(aFunc());
 });
