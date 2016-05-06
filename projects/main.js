@@ -1,6 +1,6 @@
 'use strict';
 
-import aFunc from './lib/test.js';
+import aFunc from './test.js';
 
 $( window ).load(function() {
   $('#main').html(aFunc());
