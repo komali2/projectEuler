@@ -21,8 +21,15 @@ function fibGenerator(max){
 	return arr;
 }
 
-
+function sumEven(arr){
+  return arr.filter((element)=>{
+    return element % 2 === 0;
+  }).reduce((pre, curr) =>{
+    return pre + curr;
+  });
+}
 
 module.exports = {
-  fibGenerator: fibGenerator
+  fibGenerator: fibGenerator,
+  sumEven: sumEven
 };

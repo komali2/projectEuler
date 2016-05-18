@@ -22,4 +22,9 @@ describe('fibonacci', ()=>{
       expect(app.fibGenerator(2)).to.eql([0, 1, 1, 2]);
     });
   });
+  describe('sumEven', ()=>{
+    it('should sum even numbers', ()=>{
+      expect(app.sumEven([2, 4, 6])).to.equal(12);
+    });
+  });
 });
