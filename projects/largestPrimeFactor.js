@@ -3,7 +3,16 @@
 // What is the largest prime factor of the number 600851475143 ?
 
 function primeFinder(target){
-  //check each number for primeness up to the target
+  if(target < 2){
+    return [];
+  }
+  var primeFactors = [];
+  sieve(target).forEach((element)=>{
+    if(target % element === 0){
+      primeFactors.push(element);
+    }
+  });
+
 }
 
 //generate an array of primes using Sieve of Eratosthenes
@@ -32,7 +41,7 @@ function sieve(n){
       arrayOut.push(i);
     }
   }
-  return output;
+  return arrayOut;
 }
 
 
