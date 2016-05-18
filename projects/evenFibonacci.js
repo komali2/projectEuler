@@ -9,7 +9,9 @@ function fibGenerator(max){
 	var start = 1;
 	var temp = 1;
 	var arr = [];
-	arr.push(0, start, temp);
+  if(max < 0){ return []};
+  max === 0 ? arr.push(0) : arr.push(0, start, temp);
+  if(max === 2){ arr.push(2)};
 	for(var i = 2; i < max; ){
 		arr.push(i);
 		temp = i;
