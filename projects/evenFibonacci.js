@@ -9,7 +9,7 @@ function fibGenerator(max){
 	var start = 1;
 	var temp = 1;
 	var arr = [];
-	arr.push(start, temp);
+	arr.push(0, start, temp);
 	for(var i = 2; i < max; ){
 		arr.push(i);
 		temp = i;
@@ -21,6 +21,6 @@ function fibGenerator(max){
 
 
 
-export default {
+module.exports = {
   fibGenerator: fibGenerator
 };
