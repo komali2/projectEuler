@@ -4,18 +4,23 @@
 //
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-export default function(){
-  //generate fibonacci sequence up to 4mil
-    //track a prev and cur (use reduce? and push into the array? )
 
-    var pre = 1,
-    nex= 2;
-    do{
-      var temp = nex;
-      nex = pre + nex;
-      pre = temp;
-      //push this into the array
-    }
-    while(nex <= 4000000);
-  //sum the even numbers
+function fibGenerator(max){
+	var start = 1;
+	var temp = 1;
+	var arr = [];
+	arr.push(start, temp);
+	for(var i = 2; i < max; ){
+		arr.push(i);
+		temp = i;
+		i = i + start;
+		start = temp;
+	}
+	return arr;
 }
+
+
+
+export default {
+  fibGenerator: fibGenerator
+};
