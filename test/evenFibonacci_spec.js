@@ -4,6 +4,9 @@ var expect = chai.expect;
 
 describe('fibonacci', ()=>{
   describe('fib generator', ()=>{
+    it('should return an array', ()=>{
+      expect(app.fibGenerator(10)).to.be.an('array');
+    });
     it('should generate a correct fibonacci sequence', ()=> {
       expect(app.fibGenerator(10)).to.eql([0, 1, 1, 2, 3, 5, 8]);
       expect(app.fibGenerator(100)).to.eql([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
@@ -23,6 +26,9 @@ describe('fibonacci', ()=>{
     });
   });
   describe('sumEven', ()=>{
+    it('should return a number', ()=>{
+      expect(app.sumEven([2, 4, 6])).to.be.a('Number');
+    });
     it('should sum even numbers', ()=>{
       expect(app.sumEven([2, 4, 6])).to.equal(12);
     });
