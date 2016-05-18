@@ -39,4 +39,9 @@ describe('fibonacci', ()=>{
       expect(app.sumEven([1, 3, 5, 9])).to.equal(0);
     });
   });
+  describe('fibSolution', ()=>{
+    it('should solve the euler problem', ()=>{
+      expect(app.fibSolution()).to.equal(4613732);
+    });
+  });
 });

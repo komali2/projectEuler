@@ -29,7 +29,12 @@ function sumEven(arr){
   }, 0);
 }
 
+function fibSolution(){
+  return sumEven(fibGenerator(4000000));
+}
+
 module.exports = {
   fibGenerator: fibGenerator,
-  sumEven: sumEven
+  sumEven: sumEven,
+  fibSolution: fibSolution
 };
