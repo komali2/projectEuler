@@ -32,5 +32,11 @@ describe('fibonacci', ()=>{
     it('should sum even numbers', ()=>{
       expect(app.sumEven([2, 4, 6])).to.equal(12);
     });
+    it('should sum even numbers mixed with odd numbers', ()=>{
+      expect(app.sumEven([1, 2, 3, 4, 5, 6])).to.equal(12);
+    });
+    it('should return 0 when all numbers are odd', ()=>{
+      expect(app.sumEven([1, 3, 5, 9])).to.equal(0);
+    });
   });
 });

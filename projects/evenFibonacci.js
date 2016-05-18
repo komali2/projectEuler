@@ -26,7 +26,7 @@ function sumEven(arr){
     return element % 2 === 0;
   }).reduce((pre, curr) =>{
     return pre + curr;
-  });
+  }, 0);
 }
 
 module.exports = {
