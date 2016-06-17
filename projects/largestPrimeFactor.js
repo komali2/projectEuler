@@ -2,16 +2,22 @@
 //
 // What is the largest prime factor of the number 600851475143 ?
 
+export default function prime(){
+  return primeSolution();
+}
+
 function primeFinder(target){
   if(target < 2){
     return [];
   }
   var primeFactors = [];
-  sieve(target).forEach((element)=>{
+  var checkMe = sieve(target);
+  for(var i = Math.ceil(Math.sqrt(target)); i >= 0; i--){
     if(target % element === 0){
-      primeFactors.push(element);
+      return element;
     }
-  });
+  };
+  return primeFactors[primeFactors.length-1];
 
 }
 
@@ -44,8 +50,13 @@ function sieve(n){
   return arrayOut;
 }
 
+function primeSolution(){
+  return primeFinder(600851475143);
+}
 
-
-module.exports = {
-
-};
+//
+// export default {
+//   sieve: sieve,
+//   primeFinder: primeFinder,
+//   primeSoultion: primeSolution
+// };

@@ -1,7 +1,8 @@
 import summer from './threeandfive.js';
+import prime from './largestPrimeFactor.js';
 var openProgram= 'none';
 $( window ).load(function() {
-  $('#main').html(summer(1000));
+  $('#main').html(prime());
 
 });
 
